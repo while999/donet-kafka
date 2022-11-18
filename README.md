@@ -4,11 +4,11 @@
 
 ### Prerequisites 项目使用条件
 
-安装docker和docker-compose即可
+安装docker和docker-compose即可,windows版本docker自带docker-compose
 
 ### Usage 使用
 
-修改docker-compose.yml文件中的192.168.1.35为实际IP，然后
+修改docker-compose.yml文件中的192.168.1.35为实际IP或者本地localhost，进入 /docker-kafka 文件夹内，打开cmd：
 ```
 docker-compose up -d
 ```
@@ -22,6 +22,9 @@ systemctl stop firewalld.service
 firewall-cmd --zone=public --add-port=9999/tcp --permanent
 firewall-cmd --reload 
 ```
+## C#项目下，通过nuget安装：Confluent.Kafka，
+运行效果：
+ ![截图](./1.jpg)
 
 ### reference 参考
 
